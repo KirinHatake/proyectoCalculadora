@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #88e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .calculadora {
+    background: #003153;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 260px;
+  }
+
+  .pantalla {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background: cornsilk;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .boton {
+    padding: 15px;
+    font-size: 18px;
+    background: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .boton:hover {
+    background: #d0d0d0;
+  }
+
+  .boton.operador {
+    background: #ff9800;
+    color: white;
+  }
+
+  .boton.operador:hover {
+    background: #e68900;
+  }
+
+  .boton.igual {
+    background: #4caf50;
+    color: white;
+    grid-column: span 2;
+  }
+
+  .boton.igual:hover {
+    background: #43a047;
+  }
+
+
+  .clearButton {
+
+  }
